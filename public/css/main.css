@@ -1,0 +1,223 @@
+.infoPanel {
+    top: calc(50% - 7rem);
+    left: calc(50% - 10rem);
+    width: 20rem;
+    height: 10rem;
+    position: fixed;
+    text-align: center;
+    background-image: linear-gradient(#BFA7D9, #A3A5DE);
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.infoPanel div {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+    color: #6A6BAB;
+}
+
+.infoPanel div input {
+    border: 0;
+    height: 100%;
+    border-radius: 0.5rem;
+
+    outline-style: none;
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.5em;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+}
+
+.infoPanel div input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+}
+
+.infoPanel button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #8988C4;
+    border: none;
+    color: #dbc4f4;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.2rem 0.5rem;
+    width: 6rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.infoPanel button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.infoPanel button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.infoPanel button:hover span {
+    padding-right: 25px;
+}
+
+.infoPanel button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* restartPanel */
+
+.restartPanel {
+    top: calc(50% - 7rem);
+    left: calc(50% - 10rem);
+    width: 20rem;
+    height: 10rem;
+    position: fixed;
+    text-align: center;
+    background-image: linear-gradient(#BFA7D9, #A3A5DE);
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.restartPanel div {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+    color: #6A6BAB;
+}
+
+
+.restartPanel button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #8988C4;
+    border: none;
+    color: #dbc4f4;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.2rem 0.5rem;
+    width: 6rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.restartPanel button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.restartPanel button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.restartPanel button:hover span {
+    padding-right: 25px;
+}
+
+.restartPanel button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* scoreBorad */
+.scoreBorad{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:10rem;
+    background-image: linear-gradient(#bfa7d988, #a3a5de66);
+    border-radius: 0.5rem;
+    color: #e1e2ff;
+
+}
+
+.scoreBorad p{
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.scoreBorad ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+.scoreBorad ul li{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+    flex-wrap: nowrap;
+}
+
+.scoreBorad ul li b{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.scoreBorad ul li b:nth-child(1){
+    flex:2;
+    text-align: left;
+}
+.scoreBorad ul li b:nth-child(2){
+    flex:1;
+    text-align: right;
+}

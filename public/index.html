@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    main canvas {
+      display: block;
+      margin: auto;
+    }
+  </style>
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+    integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/lib/p5.min.js"></script>
+  <script src="./js/util/util.js"></script>
+
+  <script src="./js/classes/Player.js"></script>
+  <script src="./js/classes/Particle.js"></script>
+  <script src="./js/classes/Projectile.js"></script>
+  <script src="./js/classes/Prop.js"></script>
+  <script src="./js/classes/Buff.js"></script>
+  
+  
+  <script src="./js/socketInit.js"></script>
+  <script src="./js/eventListeners.js"></script>
+
+  <script src="./js/client.js"></script>
+</head>
+
+<body>
+  <div class="scoreBorad">
+    <p>score</p>
+    <ul>
+      <li><b>Player1111111111</b>&emsp;<b>1</b></li>
+      <li><b>a</b>&emsp;<b>22</b></li>
+      <li><b>13</b>&emsp;<b>333</b></li>
+    </ul>
+  </div>
+  <div class="infoPanel show">
+    <div>
+      <label>昵称:</label><input type="text" name="name" title="name" placeholder="请输入昵称">
+    </div>
+    <button type="button" id="join" ><span>加入</span></button>
+  </div>
+  <div class="restartPanel hidden">
+    <div>
+      <label>你已阵亡!</label>
+    </div>
+    <button type="button" id="restart" ><span>重来</span></button>
+  </div>
+  <main></main>
+</body>
+
+</html>
